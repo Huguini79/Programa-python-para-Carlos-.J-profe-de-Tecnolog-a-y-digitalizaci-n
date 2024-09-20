@@ -15,6 +15,7 @@ def ale():
     messagebox.showinfo('Persona aleatoria', f'Persona aleatoria: {per_ale}')
 def borrar():
     personas.clear()
+    messagebox.showinfo('Ok', 'Lista de personas eliminadas correctamente')
 label = tk.Label(root, text='Bienvenido a mi programa en python por mí(Hugo)', height='2', width='60')
 texto = tk.Text(root, height='2', width='25')
 botónagreg = tk.Button(root, text='Agregar persona', height='2', width='40', command=agregar)
