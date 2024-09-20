@@ -13,12 +13,16 @@ def agregar():
 def ale():
     per_ale = random.choice(personas)
     messagebox.showinfo('Persona aleatoria', f'Persona aleatoria: {per_ale}')
+def borrar():
+    personas.clear()
 label = tk.Label(root, text='Bienvenido a mi programa en python por mí(Hugo)', height='2', width='60')
 texto = tk.Text(root, height='2', width='25')
 botónagreg = tk.Button(root, text='Agregar persona', height='2', width='40', command=agregar)
 botónale = tk.Button(root, text='Mostrar persona aleatoria', height='2', width='50', command=ale)
+botónborr = tk.Button(root, text='Borrar lista de personas', height='2', width='40', command=borrar)
 label.grid(row=0, column=0, padx=10, pady=10)
 texto.grid(row=1, column=0, padx=10, pady=10)
 botónagreg.grid(row=2, column=0, padx=10, pady=10)
 botónale.grid(row=3, column=0, padx=10, pady=10)
+botónborr.grid(row=4, column=0, padx=10, pady=10)
 root.mainloop()
